@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "../UI/Button";
+import "./GoalInput.css";
 
 const GoalInput = (props) => {
   const [entredGoals, setEntredGoals] = useState("");
@@ -10,16 +11,16 @@ const GoalInput = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    props.addGoal(entredGoals);
+    props.onAddGoal(entredGoals);
   };
 
   return (
     <form onSubmit={submitHandler}>
-      <div>
+      <div className="form-control">
         <label>What's your goal?</label>
         <input type="text" onChange={goalInputHandler}></input>
       </div>
-      <Button />
+      <Button type="submit">Add Goal</Button>
     </form>
   );
 };

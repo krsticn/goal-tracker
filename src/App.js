@@ -11,12 +11,12 @@ const App = () => {
 
   const addGoalHandler = (goalText) => {
     setGoalsData((prevGoals) => {
-      let previousGoals = [...prevGoals];
-      let adedGoals = previousGoals.unshift({
+      let updatedGoals = [...prevGoals];
+      updatedGoals.unshift({
         text: goalText,
-        id: Math.ceil(Math.random() * 100),
+        id: Math.ceil(Math.random() * 100).toString,
       });
-      return adedGoals;
+      return updatedGoals;
     });
   };
 
@@ -27,7 +27,7 @@ const App = () => {
     });
   };
 
-  let content = <h2>There is no goals. Add one?</h2>;
+  let content = <h2 className="notice">There is no goals. Add one?</h2>;
 
   if (goalsData.length > 0) {
     content = <GoalList goals={goalsData} onDelete={deleteItemHandler} />;
@@ -36,7 +36,7 @@ const App = () => {
   return (
     <div id="goals">
       <section id="goal-form">
-        <GoalInput addGoal={addGoalHandler} />
+        <GoalInput onAddGoal={addGoalHandler} />
       </section>
       {content}
     </div>
