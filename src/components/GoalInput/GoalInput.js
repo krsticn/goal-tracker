@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from "../UI/Button";
-import "./GoalInput.css";
+import style from "./GoalInput.module.css";
 
 const GoalInput = (props) => {
   const [entredGoals, setEntredGoals] = useState("");
@@ -20,13 +20,18 @@ const GoalInput = (props) => {
       return;
     }
     props.onAddGoal(entredGoals);
+    setEntredGoals("");
   };
 
   return (
     <form onSubmit={submitHandler}>
-      <div className={`form-control ${!isValid ? "invalid" : ""}`}>
+      <div className={`${style["form-control"]} ${!isValid && style.invalid}`}>
         <label>What's your goal?</label>
-        <input type="text" onChange={goalInputHandler}></input>
+        <input
+          type="text"
+          onChange={goalInputHandler}
+          value={entredGoals}
+        ></input>
       </div>
       <Button type="submit">Add Goal</Button>
     </form>
