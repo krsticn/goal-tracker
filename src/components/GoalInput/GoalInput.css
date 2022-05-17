@@ -20,7 +20,11 @@
   
   .form-control input:focus {
     outline: none;
-    background: #fad0ec;
-    border-color: #8b005d;
+    background: #f2f2f2;
+    border-color: #d0d0d0;
   }
   
+  .form-control.invalid input {
+    background-color: #FFEDEB;
+    border-color: #ff726f;
+  }
