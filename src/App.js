@@ -14,7 +14,7 @@ const App = () => {
       let updatedGoals = [...prevGoals];
       updatedGoals.unshift({
         text: goalText,
-        id: Math.ceil(Math.random() * 100).toString,
+        id: Math.random().toString(),
       });
       return updatedGoals;
     });
