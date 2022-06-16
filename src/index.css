@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 html {
@@ -7,5 +8,10 @@ html {
 }
 
 body {
+  background: linear-gradient(0deg, rgb(9, 61, 93), rgb(15, 108, 166));
+  background-repeat: no-repeat;
+  height: 100%;
   margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

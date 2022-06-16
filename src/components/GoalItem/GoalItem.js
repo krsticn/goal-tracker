@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./GoalItem.module.css";
+import classes from "./GoalItem.module.css";
 
 const GoalItem = (props) => {
   const deleteHandler = () => {
@@ -7,8 +7,9 @@ const GoalItem = (props) => {
   };
 
   return (
-    <li onClick={deleteHandler} className={style["goal-item"]}>
-      {props.children}
+    <li onClick={deleteHandler} className={classes["goal-item"]}>
+      <h3>Title: {props.title}</h3>
+      <p>{props.description}</p>
     </li>
   );
 };
