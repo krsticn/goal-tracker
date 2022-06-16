@@ -8,12 +8,11 @@
   }
 
 .goal-form {
-  width: 600px;
-  height: 320px;
+  width: 650px;
   margin: 50px 0px 30px 0px;
-  padding: 2rem;
+  padding: 30px 35px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
+  border-radius: 15px;
   background-color:white;
 }
 

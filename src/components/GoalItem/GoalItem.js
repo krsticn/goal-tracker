@@ -8,7 +8,7 @@ const GoalItem = (props) => {
 
   return (
     <li onClick={deleteHandler} className={classes["goal-item"]}>
-      <h3>Title: {props.title}</h3>
+      <h3>{props.title}</h3>
       <p>{props.description}</p>
     </li>
   );

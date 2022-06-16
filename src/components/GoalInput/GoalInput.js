@@ -25,7 +25,7 @@ const GoalInput = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
 
-    if (enterdGoal !== "") {
+    if (enterdGoal && enterdDescription) {
       props.onAddGoal(enterdGoal, enterdDescription);
     }
 
@@ -43,9 +43,10 @@ const GoalInput = (props) => {
   return (
     <form onSubmit={submitHandler}>
       <div className={goalInputClases}>
-        <label>Goal Title</label>
+        <label>Goal Title:</label>
         <input
           type="text"
+          placeholder="Your goal..."
           onChange={goalInputHandler}
           onBlur={goalInputBlurHandler}
           value={enterdGoal}
@@ -55,9 +56,10 @@ const GoalInput = (props) => {
         )}
       </div>
       <div className={descriptionInputClases}>
-        <label>Description</label>
+        <label>Description:</label>
         <input
           type="text"
+          placeholder="Description..."
           onChange={descriptionInputHandler}
           onBlur={descriptionInputBlurHandler}
           value={enterdDescription}
