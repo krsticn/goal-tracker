@@ -2,8 +2,8 @@
     width:100%;
     font: inherit;
     padding: 10px 50px;
-    border: 1px solid red;
-    background: red;
+    border: 1px solid blue;
+    background: blue;
     color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -16,8 +16,8 @@
   
   .button:hover,
   .button:active {
-    background: #ffa20b;
-    border-color: #ffa20b;
+    background: blue;
+    border-color: blue;
   }
   
   @media only screen and (min-width: 600px) {
