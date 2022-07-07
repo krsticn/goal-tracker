@@ -81,7 +81,7 @@ const GoalInput = (props) => {
             <p className={classes.error}>Please enter goal description</p>
           )}
         </div>
-        <Button type="submit">Add Goal</Button>
+        <Button type="submit">Add Goals</Button>
       </form>
     </Fragment>
   );
