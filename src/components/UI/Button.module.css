@@ -8,6 +8,8 @@
     cursor: pointer;
     border-radius: 5px;
     margin: 5px 0px;
+    background-color: pink;
+    color: cyan;
   }
   
   .button:focus {
@@ -18,10 +20,11 @@
   .button:active {
     background: #ffa20b;
     border-color: #ffa20b;
+    background-color: green;
   }
   
   @media only screen and (min-width: 600px) {
     .button {
-      width:auto;
+      width:100%;
     }
   } 
