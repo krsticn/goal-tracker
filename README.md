@@ -1,5 +1,13 @@
-# goal-tracker
+###
 
-Goal-tracker is an app that is partially done coding along with the Udemy course, and partially on my own.
-On my own, I added a custom hook for Input validation, custom styling, and adjusted the logic that is presented in the course.
-Creating this app I learned to collect user input, and how to dynamically render content.      
+This README would normally document whatever steps are necessary to get your application up and
+running.
+
+### React Web application
+
+- ReactJS
+
+### Client LOCAL SETUP
+
+- Run npm install in root folder
+- Run npm start in root folder
